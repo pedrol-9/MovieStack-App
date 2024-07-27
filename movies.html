@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Moviestack_favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            -color1: #6D38E0;
+            -color2: #d2ccff;
+            -color3: #FFFFFF;
+            -color4: #000000;
+        }
+    </style>
+    <title>Movies</title>
+</head>
+
+<body class="flex flex-wrap min-h-screen">
+    <header class="w-full flex flex-col items-center justify-between bg-[#6D38E0] lg:flex-row lg:justify-around">
+        <div class="flex items-center m-4">
+            <img class="w-[90px] h-[85px] rounded-[50%] object-cover bg-[#FFFFFF] mr-2"
+                src="./assets/Moviestack_isotipo.png" alt="logotipo de moviestack">
+            <h1 class="font-extrabold text-[#FFFFFF] pr-2 text-4xl md:text-6xl">MOVIESTACK</h1>
+        </div>
+        <nav
+            class="text-base text-[#6D38E0] flex flex-wrap justify-center items-center text-center w-full py-3 gap-3 mb-4 lg:mb-0 md:justify-center md:w-1/2 lg:justify-end lg:w-1/2">
+            <a class="anchor w-[30%] bg-[#d2ccff] p-1 rounded font-extrabold lg:w-[20%] shadow-[2px_2px_4px_2px_#d2ccff] hover:shadow-[2px_2px_4px_2px_#000000]"
+                href="./home.html">HOME
+            </a>
+            <a class="anchor w-[30%] bg-[#d2ccff] p-1 rounded font-extrabold lg:w-[20%] shadow-[2px_2px_4px_2px_#d2ccff] hover:shadow-[2px_2px_4px_2px_#000000] border-[.5px] border-solid border-[#FFFFFF]"
+                href="#">MOVIES
+            </a>
+            <a class="anchor w-[30%] bg-[#d2ccff] p-1 rounded font-extrabold lg:w-[20%] shadow-[2px_2px_4px_2px_#d2ccff] hover:shadow-[2px_2px_4px_2px_#000000]"
+                href="./favorites.html">FAVS
+            </a>
+        </nav>
+    </header>
+
+    <main class="grow min-h-[80vh] bg-[#FFFFFF] md:flex md:flex-wrap md:justify-center w-full">
+        <section id="main-section" class="w-full">
+            <div id="filters" class="flex flex-wrap justify-center bg-[#6D38E0] mb-12 md:flex md:flex-wrap md:justify-around md:items-center">
+                <h1 class="w-full text-center font-bold text-white ">Search a Movie</h1>
+                <label class="flex justify-center p-2 w-full rounded-md m-4 md:w-[50%]">
+                    <input id="searchInput" class="bg-[#d2ccff] w-[90%] rounded-md h-[2rem] xl:h-[2.7rem] text-center" type="search"
+                        name="movie" placeholder="Write down a title">
+                </label>
+
+                <select id="select-genres" class="w-2/3 rounded-md h-[2rem] text-center bg-[#d2ccff] italic m-4 md:w-[30%] xl:h-[2.7rem]" name="genres" >
+                    <option selected value="all-movies">All Movies</option>
+                </select>
+
+            </div>
+
+            <div class="card-container flex flex-wrap gap-4 justify-center w-full">
+
+            </div>
+        </section>
+    </main>
+    
+    <footer class="w-full text-center bg-[#6D38E0] text-[#FFFFFF] font-bold py-4 mt-8">
+        <p>MindHub - Cohort N° 54 - Pedro Sanabria
+        </p>
+    </footer>
+
+    <!-- <style>
+        * {
+            border: 1px solid red;
+        }
+    </style> -->
+
+    <script type="module" src="./movies.js"></script>
+    <!-- <script type="module" src="./moviestack.js"></script> -->
+</body>
+
+</html>

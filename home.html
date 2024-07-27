@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Moviestack_favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            -color1: #6D38E0;
+            -color2: #d2ccff;
+            -color3: #FFFFFF;
+            -color4: #000000;
+        }
+    </style>
+
+    <title>Home Moviestack</title>
+</head>
+
+<body class="flex flex-wrap min-h-screen">
+    <header class="w-full flex flex-col items-center justify-between bg-[#6D38E0] lg:flex-row lg:justify-around">
+        <div class="flex items-center m-4">
+            <img class="w-[90px] h-[85px] rounded-[50%] object-cover bg-[#FFFFFF] mr-2"
+                src="./assets/Moviestack_isotipo.png" alt="logotipo de moviestack">
+            <h1 class="font-extrabold text-[#FFFFFF] pr-2 text-4xl">MOVIESTACK</h1>
+        </div>
+        <nav
+            class="text-base text-[#6D38E0] flex flex-wrap justify-center items-center text-center w-full py-3 gap-3 mb-4 md:mb-0 lg:mb-0 md:justify-center md:w-1/2 lg:justify-end lg:w-1/2">
+            <a class="anchor w-[30%] bg-[#d2ccff] p-1 rounded font-extrabold lg:w-[20%] shadow-[2px_2px_4px_2px_#d2ccff] hover:shadow-[2px_2px_4px_2px_#000000] border-[.5px] border-solid border-[#FFFFFF]"
+                href="#">HOME
+            </a>
+            <a class="anchor w-[30%] bg-[#d2ccff] p-1 rounded font-extrabold lg:w-[20%] shadow-[2px_2px_4px_2px_#d2ccff] hover:shadow-[2px_2px_4px_2px_#000000]"
+                href="./movies.html">MOVIES
+            </a>
+            <a class="anchor w-[30%] bg-[#d2ccff] p-1 rounded font-extrabold lg:w-[20%] shadow-[2px_2px_4px_2px_#d2ccff] hover:shadow-[2px_2px_4px_2px_#000000]"
+                href="./favorites.html">FAVS
+            </a>
+        </nav>
+    </header>
+    <main class="grow grow min-h-[80vh] bg-[#FFFFFF] md:flex md:flex-wrap md:justify-center">
+        <article class="flex flex-wrap md:flex md:flex-wrap md:justify-center justify-center">
+            <img class="w-[70vw] h-[50vw] object-cover my-4 md:h-[30vw] md:w-[40vw] lg:h-[25vw] md:object-cover"
+                src="assets/Moviestack_isotipo.png" alt="banner de moviestack">
+            <p class="px-4 text-justify lg:mx-12">
+                Welcome to MovieStack, your ultimate destination for everything related to the world of cinema. At
+                MovieStack, we're passionate about movies in all their forms: from timeless classics to the latest box
+                office hits. Whether you're a die-hard cinephile or just looking for a good movie to watch tonight,
+                you've come to the right place!
+
+                Looking for the latest Hollywood releases? Don't worry, at MovieStack we're always updating our
+                selection with the newest releases. Discover the most popular movies in theaters and enjoy the
+                excitement of contemporary cinema from the comfort of your own home.
+            </p>
+        </article>
+
+        <div class="flex w-full justify-center my-8">
+            <p class="font-extrabold"> * * * </p>
+        </div>
+
+        <article>
+            <p class="px-4 text-justify lg:mx-12">
+                But that's not all at MovieStack, we also highlight movies that deserve your attention beyond the
+                mainstream. Explore our sections dedicated to independent, international, and cult cinema, where you can
+                uncover hidden gems and expand your cinematic horizons.
+
+                Get ready for an unparalleled cinematic experience at MovieStack, where entertainment never ends!
+            </p>
+            <div class="flex justify-center gap-3 my-8 lg:gap-[10vw]">
+                <a class="anchor text-center bg-[#d2ccff] w-[45%] rounded-md lg:w-[30vw] lg:h-[25vw] shadow-[2px_2px_4px_2px_#6D38E0] hover:shadow-[2px_2px_4px_2px_#000000]"
+                    href="./movies.html">
+                    <h3 class="pt-8 font-extrabold text-[#6D38E0]">GO TO MOVIES!</h3>
+                    <img class="object-cover w-full" src="./Recursos Moviestack/Moviestack_logotipo1.png" alt="">
+                </a>
+                <a class="anchor text-center bg-[#d2ccff] w-[45%] rounded-md lg:w-[30vw] lg:h-[25vw] shadow-[2px_2px_4px_2px_#6D38E0] hover:shadow-[2px_2px_4px_2px_#000000]"
+                    href="./favorites.html">
+                    <h3 class="pt-8 bottom-2 left-12 font-extrabold text-[#6D38E0]">GO TO FAVS!</h3>
+                    <img class="object-cover w-full" src="./Recursos Moviestack/Moviestack_logotipo2.png" alt="">
+                </a>
+            </div>
+        </article>
+    </main>
+    <footer class="w-full text-center bg-[#6D38E0] text-[#FFFFFF] font-bold py-4 mt-8">
+        <p>MindHub - Cohort N° 54 - Pedro Sanabria
+        </p>
+    </footer>
+    <script src="./moviestack.js"></script>
+    <script src="./movies.js"></script>
+</body>
+
+</html>
